@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5//angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5//angular-route.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="viewApp">
+        <div  style="font-size: large">
+            <ul class="menu">
+                <li><a href="#/Person">All Persons</a></li>
+                <li><a href="#/AddPerson">New Person</a></li>
+            </ul>
+            <div>
+                <!--This is were templates will be inserted-->
+                <div ng-view="ng-view"></div>
+            </div>
+        </div>
+    </body>
+    <!--</html>-->
